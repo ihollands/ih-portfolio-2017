@@ -40,8 +40,8 @@ $(function() {
           im2.fadeTo(300, 1.0, function() {
             a.fadeTo(300, 1.0, function() {
               web.fadeTo(800, 1.0, function() {
-                brain.fadeTo(1500, 1.0)
-                role.fadeTo(1500, 1.0, changeColors)
+                brain.fadeTo(1500, 1.0);
+                role.fadeTo(1500, 1.0, changeColors);
                   })
                 })
               })
@@ -61,10 +61,11 @@ $(function() {
         })
       brain.fadeOut(1000, function() {
         brain.attr("src", images[counter]);
+        ih.css("color", colors[counter]);
+        hello.css("border", "2px solid "+colors[counter]);
         role.fadeIn(2000, function() {
-          counter++;
-        })
-        brain.fadeIn(2000, changeColors)
+          counter++;});
+        brain.fadeIn(2000, changeColors);
       });
     }
 

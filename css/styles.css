@@ -34,6 +34,14 @@ h1 span {
   color: #23aab8;
 }
 
+#ih {
+  transition: color 2s ease;
+}
+
+#hello {
+  transition: border-color 2s ease;
+}
+
 
 .main-container {
   width: 100vw;
