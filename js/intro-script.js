@@ -52,7 +52,11 @@ $(function() {
 
   function changeColors() {
     if (counter === 3) {
-      console.log ('cycle done');
+      hello.slideUp(1000);
+      im.slideUp(1000);
+      and.slideUp(1000);
+      im2.slideUp(1000);
+      a.slideUp(1000);
     } else {
       role.fadeOut(1000, function() {
         role

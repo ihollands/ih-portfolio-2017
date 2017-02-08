@@ -1,0 +1,94 @@
+menu {
+  width: 102px;
+  position: fixed;
+  right:0;
+  top: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+.menu-button {
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  background-color: #757D86;
+  border-radius: 40px;
+}
+
+menu #top {
+  border: 2px solid #35434c;
+  transition: 1s ease;
+}
+
+menu #dev {
+  border: 2px solid #23aab8;
+  background-image: url("../images/icons/dev-icon-blue.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s ease;
+}
+
+menu #design {
+  border: 2px solid #fb3640;
+  background-image: url("../images/icons/design-icon-red.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s ease;
+}
+
+menu #globe {
+  border: 2px solid #6fb249;
+  background-image: url("../images/icons/globe-icon-green.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s ease;
+}
+
+menu #envelope {
+  border: 2px solid #ffe74c;
+  background-image: url("../images/icons/envelope-icon-yellow.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s ease;
+}
+
+menu div:hover {
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+
+menu #top:hover {
+  background-color: #35434c;
+  border-color: #fff;
+  /*background-image: url("../images/icons/envelope-icon-yellow.png");*/
+}
+
+menu #dev:hover {
+  background-color: #23aab8;
+  border-color: #fff;
+  background-image: url("../images/icons/dev-icon.png");
+}
+
+menu #design:hover {
+  background-color: #fb3640;
+  border-color: #fff;
+  background-image: url("../images/icons/design-icon.png");
+}
+
+menu #globe:hover {
+  background-color: #6fb249;
+  border-color: #fff;
+  background-image: url("../images/icons/globe-icon.png");
+}
+
+menu #envelope:hover {
+  background-color: #ffe74c;
+  border-color: #fff;
+  background-image: url("../images/icons/envelope-icon.png");
+}

@@ -4,9 +4,22 @@
   font-family: "Abel", sans-serif;
 }
 
-#main-text {
-  margin: 5vh;
-  height: 80vh;
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.secondary-container {
+  background-color: #35434C;
+  height: 45vh;
 }
 
 h1 span {
@@ -15,19 +28,30 @@ h1 span {
   display: none;
 }
 
+h2 {
+  font-weight: bold;
+  color: #35434C;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+  font-size: 1.2em;
+}
+
 #hello {
-  font-size: 15vh;
+  font-size: 14vh;
   padding: 0 30px;
   text-align: center;
   border: 2px solid #23aab8;
 }
 
 #ih, #web, #role {
-  font-size: 13vh;
+  font-size: 12vh;
 }
 
 #ih, #web {
- margin-left: 100px;
+ margin-left: 10%;
 }
 
 #ih, #role {
@@ -42,28 +66,15 @@ h1 span {
   transition: border-color 2s ease;
 }
 
-
-.main-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.secondary-container {
-  background-color: #35434C;
-  height: 45vh;
-}
-
 #main-one {
   background-image: url("../images/bg-main/wash-mon.png");
   background-attachment: fixed;
-  background-size:cover;
+  background-size: cover;
 }
 
 #main-two {
   background-color: #23aab8;
+  padding-right: 120px;
 }
 
 #main-three {
@@ -78,29 +89,65 @@ h1 span {
   background-color: #ffe74c;
 }
 
-#sec-one {
 
+.main-text {
+  margin: 8vh;
 }
 
-#sec-one {
-
+#main-one .main-text {
+  margin: 4vh;
+  height: 80vh;
+  width: 45%;
 }
 
-#sec-one {
-
+#brain {
+  padding-right: 160px;
 }
 
-
-#main-one #brain {
-  align-self: baseline;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#main-one #brain img {
-  height: 70%;
+#brain img {
+  height: 65%;
   display:none;
+}
+
+#main-two .main-text {
+  width: 700px;
+  text-align: justify;
+}
+
+#laptop {
+  flex-shrink: 0;
+  display: block;
+  height: 603.6px;
+  width: 900px;
+  background-image: url("../images/main/mbp-laptop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#laptop img {
+  margin: 100px 0 0 180px;
+  height: 350px;
+}
+
+.sub-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: -150px auto 0 auto;
+}
+
+.sub-container h2 {
+  padding: 5px;
+  border-top: 10px solid #35434C;
+  cursor: pointer;
+  transition: font-size 1s ease;
+}
+
+.sub-container h2:hover {
+  color: #fff;
+}
+
+.sub-container .active {
+  color: #fff;
+  font-size: 2.5em;
 }

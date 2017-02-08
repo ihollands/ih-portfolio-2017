@@ -4,14 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
   <link href="https://fonts.googleapis.com/css?family=Abel|Fira+Sans+Extra+Condensed" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-  <title>Ian Hollands</title>
+  <title>Ian Hollands | Developer</title>
 </head>
 <body>
+  <menu>
+    <a href="#main-one"><div class="menu-button" id="top"></div></a>
+    <a href="#main-two"><div class="menu-button" id="dev"></div></a>
+    <a href="#main-three"><div class="menu-button" id="design"></div></a>
+    <a href="#main-four"><div class="menu-button" id="globe"></div></a>
+    <a href="#main-five"><div class="menu-button" id="envelope"></div></a>
+  </menu>
 
   <section class="main-container" id="main-one">
-    <div id="main-text">
+    <div class="main-text">
       <h1>
         <span id="hello">Hello there!</span><br/>
         <span id="im">I'm</span><br/>
@@ -23,12 +31,26 @@
         <span id="role">developer</span>
       </h1>
     </div>
-    <div id="brain">
+    <div class="image-container" id="brain">
       <img src="./images/brain/brain-blue.png" alt="Brain Illustration"/>
     </div>
   </section>
 
   <section class="main-container" id="main-two">
+    <div class="main-text">
+      <h2>passionate web development</h2>
+      <p>For some developers, building websites is a hobby. For me, it's a passion. From designing beautiful online homes for content to building powerhouse full-stack web applications, I'm always looking to test the limits with the latest and greatest coding frameworks, technologies, and techniques. And yup, I speak Ruby, but my native tongue is JavaScript. Rest assured, whatever the language, I'm always eloquent :)</p>
+    </div>
+    <div class="image-container" id="laptop">
+      <img src="./images/screengrabs/google.png"/>
+    </div>
+    <div class="sub-container" id="sub-two">
+      <h2 class="active">Developer</h2>
+      <h2>Weight Mate</h2>
+      <h2>Phrazberri</h2>
+      <h2>Qualif-Fi</h2>
+      <h2>Salmon Says</h2>
+    </div>
   </section>
 
   <section class="secondary-container" id="sec-one">
@@ -50,6 +72,8 @@
   </section>
 
 
-<script src="script.js"></script>
+<script src="./js/intro-script.js"></script>
+<script src="./js/scroll.js"></script>
+<script src="./js/dev-blue.js"></script>
 </body>
 </html>
