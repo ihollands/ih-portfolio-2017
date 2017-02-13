@@ -32,11 +32,13 @@ h2 {
   font-weight: bold;
   color: #35434C;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 p {
   color: #fff;
   font-size: 1.2em;
+  padding-bottom: 10px;
 }
 
 #hello {
@@ -110,8 +112,8 @@ p {
 }
 
 #main-two .main-text {
+  height:30vh;
   width: 700px;
-  text-align: justify;
 }
 
 #laptop {
@@ -130,6 +132,7 @@ p {
 }
 
 .sub-container {
+  height: 8vh;
   width: 60%;
   display: flex;
   justify-content: space-around;
