@@ -1,34 +1,47 @@
-* {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Abel", sans-serif;
 }
 
 .main-container {
-  width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
+  padding: 12vh;
   align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .image-container {
-  display: flex;
-  align-items: center;
+  width: 45vw;
+}
+
+.main-text {
+  height: 65vh;
+  width: 40vw;
 }
 
 .secondary-container {
   background-color: #35434C;
   height: 45vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 h1 span {
-  font-size: 10vh;
+  font-size: 4.5vw;
   color: #757D86;
   display: none;
 }
 
 h2 {
+  font-size: 1.5vw;
   font-weight: bold;
   color: #35434C;
   text-transform: uppercase;
@@ -37,19 +50,20 @@ h2 {
 
 p {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.3vw;
   padding-bottom: 10px;
 }
 
+/*main-one*/
 #hello {
-  font-size: 14vh;
+  font-size: 7vw;
   padding: 0 30px;
   text-align: center;
   border: 2px solid #23aab8;
 }
 
 #ih, #web, #role {
-  font-size: 12vh;
+  font-size: 6vw;
 }
 
 #ih, #web {
@@ -68,79 +82,41 @@ p {
   transition: border-color 2s ease;
 }
 
-#main-one {
-  background-image: url("../images/bg-main/wash-mon.png");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#main-two {
-  background-color: #23aab8;
-  padding-right: 120px;
-}
-
-#main-three {
-  background-color: #fb3640;
-}
-
-#main-four {
-  background-color: #6fb249;
-}
-
-#main-five {
-  background-color: #ffe74c;
-}
-
-
-.main-text {
-  margin: 8vh;
-}
-
-#main-one .main-text {
-  margin: 4vh;
-  height: 80vh;
-  width: 45%;
-}
-
-#brain {
-  padding-right: 160px;
-}
-
 #brain img {
-  height: 65%;
+  max-width: 100%;
   display:none;
 }
 
+/*main-two*/
 #main-two .main-text {
-  height:30vh;
-  width: 700px;
+  height: 50vh;
 }
 
 #laptop {
-  flex-shrink: 0;
-  display: block;
-  height: 603.6px;
-  width: 900px;
+  flex-shrink:0;
+  width: 80vh;
+  height: 60vh;
   background-image: url("../images/main/mbp-laptop.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #laptop img {
-  margin: 100px 0 0 180px;
-  height: 350px;
+  width: 50vh;
+  margin-top: 8.8vh;
+  margin-left: 15.7vh;
 }
 
 .sub-container {
-  height: 8vh;
-  width: 60%;
+  height: 10vh;
+  padding-top: 4vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: -150px auto 0 auto;
 }
 
 .sub-container h2 {
-  padding: 5px;
+  margin: 2vw;
   border-top: 10px solid #35434C;
   cursor: pointer;
   transition: font-size 1s ease;
@@ -152,5 +128,149 @@ p {
 
 .sub-container .active {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 3vw;
+}
+
+/*container backgrounds, etc.*/
+#main-one {
+  background-image: url("../images/bg-main/wash-mon.png");
+  padding-left: 5vh;
+  padding-right: 15vh;
+}
+
+
+#main-two {
+  background-color: #23aab8;
+  padding-top: 10vh;
+}
+
+#sec-one {
+  background-image: url("../images/bg-main/concert.png");
+}
+
+#main-three {
+  background-color: #fb3640;
+}
+
+#sec-two {
+  background-image: url("../images/bg-main/sky-dive.png");
+}
+
+#main-four {
+  background-color: #6fb249;
+}
+
+#sec-three {
+  background-image: url("../images/bg-main/bike.png");
+
+}
+
+#main-five {
+  background-color: #ffe74c;
+}
+
+
+@media (max-width: 500px) {
+  /*all*/
+  .main-container {
+    padding: 2vh;
+    height: 94vh;
+  }
+
+  .main-text {
+    width: auto;
+  }
+
+  p {
+    font-size: 2vh;
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 3vh;
+    padding-bottom: 0;
+  }
+
+  /*main-one*/
+  #main-one {
+    padding: 0;
+    padding-top: 10vh;
+    justify-content: center;
+  }
+
+  #main-one .main-text {
+    height: 40vh;
+    width: 70vw;
+  }
+
+  #brain {
+    height: 30vh;
+    width: 70%;
+    order: -1;
+  }
+
+  h1 span {
+    font-size: 4.5vh;
+  }
+
+  #hello {
+    font-size: 6vh;
+    padding: 0 1vh;
+    text-align: center;
+    border: 2px solid #23aab8;
+  }
+
+  #ih, #web, #role {
+    font-size: 6vh;
+  }
+
+  /*main-two*/
+  #main-two {
+    padding-top: 2vh;
+  }
+  #laptop {
+    flex-shrink: auto;
+    background: none;
+    width: auto;
+    height: auto;
+    margin: 1vh;
+    order: 0;
+  }
+
+  #laptop img {
+    margin: 0 auto;
+  }
+
+  .sub-container {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .sub-container h2 {
+    margin: 2vw;
+    border-top: 10px solid #35434C;
+  }
+
+  .sub-container .active {
+    color: #fff;
+    font-size: 3vh;
+  }
+
+  #main-two .main-text {
+    order: 1;
+    padding: 0;
+  }
+
+  #main-two .main-text h2 {
+    display: none;
+  }
+
+  #sub-two {
+    order: -1;
+    width: auto;
+  }
+
+
 }

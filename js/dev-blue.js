@@ -29,6 +29,14 @@ $(function() {
     "./images/screengrabs/salmon-says.png",
   ]
 
+  var siteLinks = [
+    "",
+    "https://secret-eyrie-51636.herokuapp.com/",
+    "https://thawing-lowlands-40791.herokuapp.com/",
+    "http://quali-fi.jackfive.io/",
+    "https://ihollands.github.io/simon/"
+  ]
+
 
 //update content and manipulate class changes for viz effects
 links.on("click", function() {
@@ -39,6 +47,7 @@ links.on("click", function() {
   var i = $(this).index();
   screen.fadeOut(800, function() {
     screen.attr("src", screens[i]);
+    screen.parent().attr("href", siteLinks[i]);
     screen.fadeIn(800);
   })
   title.fadeOut(800, function() {

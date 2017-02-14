@@ -9,6 +9,7 @@ $(function() {
   var role = $("#role");
 
   var brain = $("#brain img");
+  var text = $("#main-one .main-text");
 
   var images = [
     "./images/brain/brain-red.png",
@@ -57,6 +58,7 @@ $(function() {
       and.slideUp(1000);
       im2.slideUp(1000);
       a.slideUp(1000);
+      text.css("line-height", "1");
     } else {
       role.fadeOut(1000, function() {
         role
@@ -72,7 +74,6 @@ $(function() {
         brain.fadeIn(2000, changeColors);
       });
     }
-
   }
 
 })
