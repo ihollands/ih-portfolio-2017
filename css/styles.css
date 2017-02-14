@@ -243,6 +243,7 @@ p {
 
   .sub-container {
     padding-top: 0;
+    margin-bottom: 6vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
