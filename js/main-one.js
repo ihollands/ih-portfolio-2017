@@ -8,14 +8,14 @@ $(function() {
   var web = $("#web");
   var role = $("#role");
 
-  var brain = $("#brain img");
+  var brain = $("#intro img");
   var text = $("#main-one .main-text");
 
   var images = [
-    "./images/brain/brain-red.png",
-    "./images/brain/brain-green.png",
-    "./images/brain/brain-yellow.png",
-    "./images/brain/brain-blue.png",
+    "./images/intro/lightbulb.png",
+    "./images/intro/earth.png",
+    "./images/intro/heart.png",
+    "./images/intro/brain.png",
   ];
 
   var content = [

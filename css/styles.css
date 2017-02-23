@@ -93,8 +93,9 @@ p {
   transition: border-color 2s ease;
 }
 
-#brain img {
-  width: 100%;
+#intro img {
+  object-fit: contain;
+  height: 100%;
   display:none;
 }
 

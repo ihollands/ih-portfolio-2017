@@ -4,9 +4,6 @@
   border-top: 1px solid #fff;
   border-bottom:1px solid #fff;
   height: 60vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 #language-content h2 {
@@ -20,10 +17,13 @@
 }
 
 #language-content > div.language {
-  height: 30%;
+  height: 18vh;
   width: 100%;
   display: none;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #language-content > div#linguist {
@@ -31,4 +31,11 @@
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+#language-content > div#image {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 2px solid white;
+  border-radius: 1vh;
 }
