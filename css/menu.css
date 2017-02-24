@@ -16,45 +16,38 @@ menu {
   border-radius: 5vh;
 }
 
+menu div {
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s ease;
+}
+
 menu #top {
   border: 2px solid #35434c;
-  transition: 1s ease;
+  background-size: 60%;
+  background-image: url("../images/icons/computer-icon-grey.png");
 }
 
 menu #dev {
   border: 2px solid #23aab8;
   background-image: url("../images/icons/dev-icon-blue.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 1s ease;
+
 }
 
 menu #design {
   border: 2px solid #fb3640;
   background-image: url("../images/icons/design-icon-red.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 1s ease;
 }
 
 menu #globe {
   border: 2px solid #6fb249;
   background-image: url("../images/icons/globe-icon-green.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 1s ease;
 }
 
 menu #envelope {
   border: 2px solid #ffe74c;
   background-image: url("../images/icons/envelope-icon-yellow.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 1s ease;
 }
 
 menu div:hover {
@@ -66,7 +59,7 @@ menu div:hover {
 menu #top:hover {
   background-color: #35434c;
   border-color: #fff;
-  /*background-image: url("../images/icons/envelope-icon-yellow.png");*/
+  background-image: url("../images/icons/computer-icon.png");
 }
 
 menu #dev:hover {
