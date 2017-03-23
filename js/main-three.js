@@ -22,11 +22,11 @@ $(function() {
   ];
 
   var graphicsArray = [
-    "./images/design/mobile-devices.png",
-    "./images/design/match.png",
-    "./images/design/bear.png",
-    "./images/design/print.png",
     "./images/design/hawk.png",
+    "./images/design/match.png",
+    "./images/design/mobile-devices.png",
+    "./images/design/print.png",
+    "./images/design/bear.png"
   ]
 
 //update content and manipulate class changes for viz effects
