@@ -7,27 +7,50 @@ html, body {
 
 .main-container {
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 12vh;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
+  .main-container:not(#main-one) {
+    box-shadow: 0 0 50px 0;
+    box-shadow: 0 0 20px 0 inset;
+  }
 
 .main-text {
   height: 65vh;
   width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .image-container {
   height: 65vh;
   width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .image-container img {
@@ -86,15 +109,18 @@ p {
 }
 
 #ih {
+  -webkit-transition: color 2s ease;
   transition: color 2s ease;
 }
 
 #hello {
+  -webkit-transition: border-color 2s ease;
   transition: border-color 2s ease;
 }
 
 #intro img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
   display:none;
 }
@@ -106,7 +132,8 @@ p {
 }
 
 #laptop {
-  flex-shrink:0;
+  -ms-flex-negative:0;
+      flex-shrink:0;
   background-image: url("../images/main/mbp-laptop.png");
   background-size: 110% auto;
   background-repeat: no-repeat;
@@ -123,15 +150,20 @@ p {
 .sub-container {
   height: 10vh;
   padding-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .sub-container h2 {
   margin: 2vw;
   border-top: 10px solid #35434C;
   cursor: pointer;
+  -webkit-transition: font-size 1s ease;
   transition: font-size 1s ease;
 }
 
@@ -145,8 +177,9 @@ p {
 }
 
 #design-graphic {
-  order: -1;
-  background-color: #fb3640;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 #design-graphic img {
@@ -177,7 +210,8 @@ p {
 }
 
 #main-two {
-  background-color: #23aab8;
+  background-image: -webkit-linear-gradient(top, #23aab8 60%, #038592);
+  background-image: linear-gradient(to bottom, #23aab8 60%, #038592);
 }
 
 #sec-one {
@@ -185,7 +219,8 @@ p {
 }
 
 #main-three {
-  background-color: #fb3640;
+  background-image: -webkit-linear-gradient(top, #fb3640 60%, #d3040f);
+  background-image: linear-gradient(to bottom, #fb3640 60%, #d3040f);
 }
 
 #sec-two {
@@ -193,7 +228,8 @@ p {
 }
 
 #main-four {
-  background-color: #6fb249;
+  background-image: -webkit-linear-gradient(top, #6fb249 60%, #468c1e);
+  background-image: linear-gradient(to bottom, #6fb249 60%, #468c1e);
 }
 
 #sec-three {
@@ -202,7 +238,8 @@ p {
 }
 
 #main-five {
-  background-color: #ffe74c;
+  background-image: -webkit-linear-gradient(top, #ffe74c 60%, #d2b917);
+  background-image: linear-gradient(to bottom, #ffe74c 60%, #d2b917);
 }
 
 
@@ -230,7 +267,9 @@ p {
   /*main-one*/
   #main-one {
     padding-top: 8vh;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   #main-one .main-text {
@@ -241,7 +280,9 @@ p {
   #brain {
     height: 30vh;
     width: 70%;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   h1 span {
@@ -268,24 +309,31 @@ p {
   }
 
   #main-three .sub-container {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     width: 70vw;
   }
 
   #laptop {
-    flex-shrink: auto;
+    -ms-flex-negative: auto;
+        flex-shrink: auto;
     background: none;
     width: auto;
     height: auto;
     margin: 1vh;
-    order: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 
   #design-graphic {
     width: auto;
     height: auto;
     margin: 1vh;
-    order: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 
   .image-container img {
@@ -295,9 +343,14 @@ p {
   .sub-container {
     padding-top: 0;
     margin-bottom: 6vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .sub-container h2 {
@@ -311,10 +364,14 @@ p {
   }
 
   #main-two .main-text, #main-three .main-text {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     padding: 0;
     height: 35vh;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 
   #main-two .main-text .text-contain h2 {
@@ -322,7 +379,9 @@ p {
   }
 
   #sub-two {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     width: auto;
   }
 
@@ -335,5 +394,13 @@ p {
     background-position: left
   }
 
+  #sec-three {
+    background-image: url("../images/bg-main/bike.png");
+
+  }
+
+  #main-five {
+    background-color: #ffe74c;
+  }
 
 }

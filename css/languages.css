@@ -20,7 +20,9 @@
   height: 18vh;
   width: 100%;
   display: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,8 +31,12 @@
 #language-content > div#linguist {
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #language-content > div#image {
